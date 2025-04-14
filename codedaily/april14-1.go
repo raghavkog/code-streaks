@@ -7,12 +7,10 @@ import (
 func mostFrequentWord(words []string) (string, int) {
 	wordCount := make(map[string]int)
 
-	// Count frequency of each word
 	for _, word := range words {
 		wordCount[word]++
 	}
 
-	// Find the word with the highest count
 	maxCount := 0
 	var mostFrequent string
 	for word, count := range wordCount {
